@@ -1,0 +1,87 @@
+:root {
+    --primary: #8b4513; /* Marrom Madeira */
+    --secondary: #d2691e; /* Verniz/Sinteko */
+    --light: #fdfaf6;
+    --dark: #2c1a0c;
+    --whatsapp: #25d366;
+    --instagram: #e1306c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-box: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--light);
+    color: var(--dark);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 40px 20px;
+    text-align: center;
+    flex: 1;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: var(--primary);
+}
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+/* Botões Flutuantes */
+.social-buttons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    color: white;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.btn-social:hover {
+    transform: scale(1.1);
+}
+
+.whatsapp {
+    background-color: var(--whatsapp);
+}
+.instagram {
+    background-color: var(--instagram);
+}
+
+/* Rodapé */
+footer {
+    background: var(--dark);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 40px;
+}
